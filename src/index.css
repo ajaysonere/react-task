@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-primary: #000000;
+  --color-white: #cab3b3;
+  --color-gray-100: hsl(220, 20%, 10%, 5%);
+  --color-gray-200: hsl(220, 20%, 10%, 10%);
+  --color-gray-300: hsl(220, 20%, 10%, 25%);
+  --color-gray-500: hsl(220, 20%, 10%, 50%);
+  --color-gray-700: #252542;
+  --color-gray-900: #0c0c22;
+  --transition: all 0.5s ease;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  line-height: 1.6;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--color-gray-700);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-gray-900);
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  line-height: 1.4rem;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+section {
+  margin-top: 6rem;
+}
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  padding: 0.5rem 3rem;
+  border-radius: var(--radius-2);
+  background: var(--color-white);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: "Poppins", sans-serif;
+}
+
+.btn.primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.nav__container {
+  height: 5rem;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.4rem;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+/*  ================= Hero  ================  */
+
+.hero__container {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../public/image05.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__content {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero__content h1 {
+  margin: 4rem;
+  color: white;
+  font-size: 4rem;
+}
+
+.hero__content p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+.hero__content div {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.without-bg {
+  border: 2px solid wheat;
+  background: transparent;
+  font-size: 1rem;
+  color: white;
+}
+
+.with-bg {
+  border: 2px solid #c39d63;
+  background: #c39d63;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.story__content {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  padding: 5rem;
+}
+
+.story__left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.story__left span {
+  width: fit-content;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  border-bottom: 2px solid #c39d63;
+}
+.story__left h1 {
+  font-weight: 300;
+}
+
+.only__content {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 5rem;
+  padding: 5rem;
+}
+.only__best {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__container {
+  background: #0c0c22;
+}
+
+.gallery__content {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.gallery__content img {
+  width: 32rem;
+  height: 20rem;
+}
+
+.card__container {
+  width: 32rem;
+  height: 20rem;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card span {
+  color: #c39d63;
+  font-size: 1.5rem;
+}
+
+/* ====================   Testimonials ==================== */
+
+.testimonials__container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.testimonials__container .testimonials__heading {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  border-bottom: 2px solid #c39d63;
+}
+
+.testimonials__container h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.testimonials__card__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.testi__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #f5f5f5;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.testi__card span {
+  font-size: 2rem;
+  color: #db9730;
+}
+.testi__card h4 {
+  font: 1rem;
+  font-weight: 400;
+}
